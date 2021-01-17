@@ -1,5 +1,8 @@
-import "./index.css";
+import React from "react";
+import ReactDOM from "react-dom";
 
-import createRoutes from "./router";
+import Router from "./router";
 
-createRoutes();
+import "./index.scss";
+
+ReactDOM.render(<Router />, document.getElementById("root"));
