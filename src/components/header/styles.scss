@@ -20,5 +20,10 @@
     top: 50%;
     height: 48px;
     width: 48px;
+
+    &.menu {
+      border: 0;
+      width: auto;
+    }
   }
 }

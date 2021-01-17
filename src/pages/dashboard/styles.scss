@@ -116,5 +116,40 @@
         }
       }
     }
+
+    .past-meetings {
+      margin-top: 48px;
+
+      .past-meetings__wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 24px;
+
+        .card {
+          background-color: #8e97fd;
+          border-radius: 10px;
+          padding: 28px 11px 22px 11px;
+          width: 48%;
+
+          .icon {
+            display: block;
+            margin: 0 auto;
+            width: 40px;
+          }
+
+          .name {
+            color: white;
+            font-size: 18px;
+            margin-top: 10px;
+          }
+
+          .date {
+            color: white;
+            font-size: 11px;
+            margin-top: 8px;
+          }
+        }
+      }
+    }
   }
 }

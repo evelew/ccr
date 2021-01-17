@@ -1,4 +1,5 @@
 import Header from "./../../components/header";
+import Stories from "./../../components/stories";
 import { ReactComponent as PlayIcon } from "./../../assets/icons/play.svg";
 import { ReactComponent as PlayRedIcon } from "./../../assets/icons/play-red.svg";
 
@@ -7,7 +8,9 @@ import "./styles.scss";
 const Dashboard = () => {
   return (
     <section className="dashboard">
-      <Header />
+      <Header withMenu />
+
+      <Stories />
 
       <div className="dashboard__content">
         <div className="container">
@@ -59,6 +62,30 @@ const Dashboard = () => {
 
               <div className="button-wrapper">
                 <button className="button">ACESSAR</button>
+              </div>
+            </div>
+          </div>
+
+          <div className="past-meetings">
+            <h2 className="section-title">encontros anteriores</h2>
+
+            <div className="past-meetings__wrapper">
+              <div className="card">
+                <PlayIcon />
+
+                <div>
+                  <h3 className="name">Stonewall e RuPaul's</h3>
+                  <small className="date">15/11</small>
+                </div>
+              </div>
+
+              <div className="card">
+                <PlayIcon />
+
+                <div>
+                  <h3 className="name">Star wars e a física</h3>
+                  <small className="date">21/10</small>
+                </div>
               </div>
             </div>
           </div>
