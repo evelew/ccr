@@ -1,4 +1,8 @@
 .signup {
+  background: url("./decoration.svg") 0 bottom no-repeat;
+  background-size: contain;
+  min-height: 100vh;
+
   .signup__content {
     padding-top: 36px;
 

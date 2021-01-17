@@ -1,6 +1,17 @@
+import { useEffect } from "react";
+import { useHistory } from "react-router-dom";
+
 import "./styles.scss";
 
 const OnboardingSplash = () => {
+  const history = useHistory();
+
+  useEffect(() => {
+    setTimeout(() => {
+      history.push("/onboarding-01");
+    }, 1000);
+  }, [history]);
+
   return (
     <section className="onboarding-splash">
       <div className="onboarding-splash__wrapper">

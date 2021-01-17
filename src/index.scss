@@ -44,9 +44,23 @@ button {
   width: 100%;
 }
 
-.onboarding__content {
+.onboarding {
   background-color: #fef9f1;
   min-height: 100vh;
+  padding-top: 72px;
+
+  .onboarding__content {
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: calc(100vh - 102px);
+    }
+
+    img {
+      width: 100%;
+    }
+  }
 
   h1 {
     color: #3f414e;
