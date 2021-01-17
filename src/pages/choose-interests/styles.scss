@@ -1,4 +1,6 @@
 .choose-interests {
+  padding-bottom: 0;
+
   .choose-interests__content-top {
     margin-top: 29px;
 
@@ -25,13 +27,52 @@
   .choose-interests__list-wrapper {
     background-color: #f2f2f2;
     margin-top: 28px;
-    padding: 40px 0;
+    padding: 40px 0 80px 0;
 
     .choose-interests__content-list {
+      align-items: center;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-around;
       list-style: none;
+
+      li {
+        display: flex;
+
+        &.selected {
+          position: relative;
+
+          &:before {
+            background-color: white;
+            border-radius: 10px;
+            content: "";
+            display: block;
+            position: absolute;
+            height: 100%;
+            opacity: 0.6;
+            width: 100%;
+          }
+
+          &:after {
+            background: url(./seletected-icon.svg) no-repeat;
+            content: "";
+            left: 50%;
+            height: 40px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            width: 40px;
+          }
+        }
+      }
     }
+  }
+
+  .float-button {
+    border-radius: 0;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
   }
 }

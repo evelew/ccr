@@ -1,8 +1,17 @@
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+
 import Header from "../../components/header";
 
 import "./styles.scss";
 
 const YourTribe = () => {
+  const [name, setName] = useState("");
+  useEffect(() => {
+    const firstName = sessionStorage.getItem("firstName") || "Renato";
+    setName(firstName);
+  }, []);
+
   return (
     <section className="your-tribe">
       <Header />
@@ -11,7 +20,7 @@ const YourTribe = () => {
         <div className="container">
           <div className="your-tribe__content-top">
             <h1 className="title">
-              <strong>Renato,</strong> essa é sua tribo:
+              <strong>{name},</strong> essa é sua tribo:
             </h1>
           </div>
 
@@ -67,7 +76,9 @@ const YourTribe = () => {
                 </div>
               </div>
 
-              <button className="button">CONHECER MINHA TURMA</button>
+              <Link className="button" to="dashboard">
+                CONHECER MINHA TURMA
+              </Link>
             </div>
           </div>
         </div>

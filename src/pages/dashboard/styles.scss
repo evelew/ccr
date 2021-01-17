@@ -4,6 +4,12 @@
 
     .title {
       font-weight: normal;
+
+      span {
+        color: #3f414e;
+        font-size: 28px;
+        text-transform: capitalize;
+      }
     }
 
     h2 {
@@ -32,6 +38,12 @@
         p {
           color: white;
           font-size: 18px;
+
+          span {
+            color: white;
+            font-size: 18px;
+            text-transform: capitalize;
+          }
         }
 
         small {

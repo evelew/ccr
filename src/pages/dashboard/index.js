@@ -1,3 +1,5 @@
+import { useState, useEffect } from "react";
+
 import Header from "./../../components/header";
 import Stories from "./../../components/stories";
 import { ReactComponent as PlayIcon } from "./../../assets/icons/play.svg";
@@ -6,6 +8,13 @@ import { ReactComponent as PlayRedIcon } from "./../../assets/icons/play-red.svg
 import "./styles.scss";
 
 const Dashboard = () => {
+  const [name, setName] = useState("");
+
+  useEffect(() => {
+    const firstName = sessionStorage.getItem("firstName") || "Renato";
+    setName(firstName);
+  }, []);
+
   return (
     <section className="dashboard">
       <Header withMenu />
@@ -15,8 +24,10 @@ const Dashboard = () => {
       <div className="dashboard__content">
         <div className="container">
           <h1 className="title">
-            <strong>Olá Renato,</strong>
-            bem vindo!
+            <strong>
+              Olá <span>{name}</span>,
+            </strong>
+            bem vindo(a)!
           </h1>
 
           <h2>Sua tribo preparou um recado pra você. Confere só.</h2>
@@ -24,7 +35,9 @@ const Dashboard = () => {
           <div className="welcome-message">
             <div className="video-card">
               <div>
-                <p>Oi, Renato!</p>
+                <p>
+                  Oi, <span>{name}</span>!
+                </p>
                 <small>10min</small>
               </div>
 

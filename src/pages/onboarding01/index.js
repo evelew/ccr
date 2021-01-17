@@ -1,7 +1,5 @@
 import { Link } from "react-router-dom";
 
-// import "./styles.scss";
-
 const Onboarding01 = () => {
   return (
     <section className="onboarding onboarding01">

@@ -4,6 +4,10 @@
 
     .title {
       font-weight: normal;
+
+      strong {
+        text-transform: capitalize;
+      }
     }
   }
 
@@ -17,7 +21,7 @@
 
     .image-wrapper {
       border-radius: 10px;
-      margin-top: 13px;
+      margin-top: 8px;
       overflow: hidden;
 
       img {
@@ -49,7 +53,7 @@
         flex-wrap: wrap;
 
         .card {
-          width: 162px;
+          width: 48%;
         }
       }
     }

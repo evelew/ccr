@@ -1,10 +1,12 @@
 import { useState } from "react";
+import { useHistory } from "react-router-dom";
 
 import Header from "../../components/header";
 
 import "./styles.scss";
 
 const TellYourHistory = () => {
+  const history = useHistory();
   const [option, setOption] = useState("");
 
   const onClickOption = (event) => {
@@ -19,7 +21,8 @@ const TellYourHistory = () => {
 
     if (!option) return;
 
-    console.log({ option });
+    sessionStorage.setItem("selectedHistory", option);
+    history.push("/tribos");
   };
 
   return (
