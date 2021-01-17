@@ -1,0 +1,35 @@
+.signup {
+  .signup__content {
+    padding-top: 36px;
+
+    h1 {
+      color: #3f414e;
+      font-size: 28px;
+    }
+
+    p {
+      color: #a1a4b2;
+      margin-top: 8px;
+
+      a {
+        color: #fa6e5a;
+        font-weight: 700;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .signup__content-form {
+    margin-top: 50px;
+
+    input {
+      &:not(:first-of-type) {
+        margin-top: 23px;
+      }
+    }
+
+    .button {
+      margin-top: 30px;
+    }
+  }
+}

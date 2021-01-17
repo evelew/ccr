@@ -5,6 +5,7 @@ import Splash from "./../pages/splash";
 import Onboarding01 from "./../pages/onboarding01";
 import Onboarding02 from "./../pages/onboarding02";
 import Onboarding03 from "./../pages/onboarding03";
+import Signup from "./../pages/signup";
 
 const Router = () => {
   return (
@@ -18,6 +19,9 @@ const Router = () => {
         </Route>
         <Route path="/onboarding-03">
           <Onboarding03 />
+        </Route>
+        <Route path="/cadastrar">
+          <Signup />
         </Route>
 
         <Route path="/">
