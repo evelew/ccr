@@ -10,6 +10,7 @@ import ChooseInterests from "../pages/choose-interests";
 import TellYourHistory from "../pages/tell-your-history";
 import Tribes from "../pages/tribes";
 import YourTribe from "../pages/your-tribe";
+import Dashboard from "../pages/dashboard";
 
 const Router = () => {
   return (
@@ -38,6 +39,9 @@ const Router = () => {
         </Route>
         <Route path="/sua-tribo">
           <YourTribe />
+        </Route>
+        <Route path="/dashboard">
+          <Dashboard />
         </Route>
 
         <Route path="/">

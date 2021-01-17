@@ -1,0 +1,120 @@
+.dashboard {
+  .dashboard__content {
+    margin-top: 29px;
+
+    .title {
+      font-weight: normal;
+    }
+
+    h2 {
+      color: #3f414e;
+      font-size: 18px;
+      font-weight: normal;
+      margin-top: 18px;
+    }
+
+    .section-title {
+      color: #3f414e;
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .welcome-message {
+      margin-top: 19px;
+
+      .video-card {
+        background-color: #333242;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        padding: 24px 22px;
+
+        p {
+          color: white;
+          font-size: 18px;
+        }
+
+        small {
+          color: #ebeaec;
+          display: block;
+          margin-top: 10px;
+        }
+
+        .icon {
+          width: 50px;
+        }
+      }
+    }
+
+    .next-meeting {
+      margin: 54px 0;
+
+      .card {
+        align-items: center;
+        background: #fa6e5a;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+        padding: 24px 22px;
+
+        .date {
+          color: white;
+          font-size: 18px;
+          font-weight: bold;
+        }
+
+        .title {
+          color: #ebeaec;
+          font-size: 14px;
+          line-height: 18px;
+          margin-top: 8px;
+        }
+
+        .icon {
+          width: 50px;
+        }
+      }
+    }
+
+    .features-list {
+      display: flex;
+      justify-content: space-between;
+
+      .feature-card {
+        background: #ffc97e;
+        border-radius: 10px;
+        padding: 30px 11px 21px 11px;
+        width: 48%;
+
+        .name {
+          color: #3f414e;
+          font-size: 18px;
+        }
+
+        p {
+          color: #524f53;
+          font-size: 11px;
+          line-height: 12px;
+          height: 30px;
+          margin-top: 5px;
+        }
+
+        .button-wrapper {
+          display: flex;
+          justify-content: flex-end;
+
+          .button {
+            background: #3f414e;
+            color: #fefffe;
+            font-size: 12px;
+            line-height: 14px;
+            margin-top: 28px;
+            padding: 6px 10px;
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+}
