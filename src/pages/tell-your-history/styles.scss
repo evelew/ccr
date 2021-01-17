@@ -8,6 +8,7 @@
     margin-top: 35px;
 
     li {
+      border: 1px solid transparent;
       background: rgba(245, 195, 113, 0.2);
       border-radius: 4px;
       color: #3f414e;
@@ -16,6 +17,24 @@
 
       &:not(:first-of-type) {
         margin-top: 10px;
+      }
+
+      &.selected {
+        border: 1px solid #fa6e5a;
+        position: relative;
+
+        &:after {
+          background: url("./selected-icon.svg") no-repeat;
+          background-size: cover;
+          content: "";
+          display: block;
+          height: 20px;
+          right: 10px;
+          position: absolute;
+          transform: translateY(-50%);
+          top: 50%;
+          width: 20px;
+        }
       }
     }
   }

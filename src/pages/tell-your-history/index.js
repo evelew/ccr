@@ -5,24 +5,40 @@ import Header from "../../components/header";
 
 import "./styles.scss";
 
+const items = [
+  { name: "Sofro bullying no colégio.", slug: "bullying" },
+  {
+    name: "Tenho dificuldades de fazer amigos.",
+    slug: "dificuldade-amigos",
+  },
+  {
+    name: "Tenho filhos e isso me atrapalha para estudar.",
+    slug: "tenho-filhos",
+  },
+];
+
 const TellYourHistory = () => {
   const history = useHistory();
-  const [option, setOption] = useState("");
+  const [seletectedOption, setSelectedOption] = useState("");
 
   const onClickOption = (event) => {
     event.persist();
 
     const value = event.target.getAttribute("data-option");
-    setOption(value);
+    setSelectedOption(value);
   };
 
   const onClickSubmit = (event) => {
     event.persist();
 
-    if (!option) return;
+    if (!seletectedOption) return;
 
-    sessionStorage.setItem("selectedHistory", option);
+    sessionStorage.setItem("selectedHistory", seletectedOption);
     history.push("/tribos");
+  };
+
+  const isSelected = (option) => {
+    return seletectedOption === option;
   };
 
   return (
@@ -41,15 +57,16 @@ const TellYourHistory = () => {
           </div>
 
           <ul className="your-history__options">
-            <li data-option="bullying" onClick={onClickOption}>
-              Sofro bullying no colégio.
-            </li>
-            <li data-option="dificuldade-amigos" onClick={onClickOption}>
-              Tenho dificuldades de fazer amigos.
-            </li>
-            <li data-option="tenho-filhos" onClick={onClickOption}>
-              Tenho filhos e isso me atrapalha para estudar.
-            </li>
+            {items.map(({ name, slug }) => (
+              <li
+                className={`${isSelected(slug) ? "selected" : ""}`}
+                data-option={slug}
+                onClick={onClickOption}
+                key={slug}
+              >
+                {name}
+              </li>
+            ))}
           </ul>
 
           <button className="button" onClick={onClickSubmit}>
