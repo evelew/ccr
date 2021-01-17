@@ -1,5 +1,7 @@
 .choose-interests {
   .choose-interests__content-top {
+    margin-top: 29px;
+
     h1 {
       color: #3f414e;
       font-size: 28px;
@@ -17,6 +19,19 @@
       font-size: 16px;
       line-height: 22px;
       margin-top: 11px;
+    }
+  }
+
+  .choose-interests__list-wrapper {
+    background-color: #f2f2f2;
+    margin-top: 28px;
+    padding: 40px 0;
+
+    .choose-interests__content-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      list-style: none;
     }
   }
 }
