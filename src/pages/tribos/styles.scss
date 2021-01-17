@@ -1,0 +1,59 @@
+.tribos__content {
+	.tribos__content-top {
+		margin-top: 29px;
+
+		h1 {
+			color: #3F414E;
+			font-size: 28px;	
+			font-weight: normal;
+			line-height: 38px;
+
+			strong {
+				display: block;
+				font-size: 28px;
+			}
+		}
+
+		p {
+			color: #A1A4B2;
+			font-size: 16px;
+			margin-top: 16px;
+		}
+	}
+
+	.tribos__content-bottom {
+		margin-top: 42px;
+	}
+
+	.tribos__content-card {
+		background: rgba(245, 195, 113, 0.2);
+		border-radius: 10px;
+		padding: 27px 30px;
+
+		&:not(:first-of-type) {
+			margin-top: 14px;
+		}
+
+		h2 {
+			color: #3F414E;
+			font-size: 18px;
+		}
+
+		p {
+			align-items: center;
+			color: #5A6175;
+			display: flex;
+			font-size: 11px;
+			margin-top: 10px;
+		}
+
+		.separator {
+			background-color: #5A6175;
+			border-radius: 50%;
+			display: inline-block;
+			height: 3px;
+			margin: 0 11px 0 8px;
+			width: 3px;
+		}
+	}
+}

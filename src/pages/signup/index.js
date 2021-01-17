@@ -17,6 +17,7 @@ const SignUp = () => {
           </p>
 
           <form className="signup__content-form">
+            <input placeholder="Digite seu nome" type="text" required />
             <input placeholder="Digite seu e-mail" type="email" required />
             <input placeholder="Escolha uma senha" type="password" required />
 

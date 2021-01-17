@@ -7,6 +7,7 @@ import Onboarding02 from "./../pages/onboarding02";
 import Onboarding03 from "./../pages/onboarding03";
 import Signup from "./../pages/signup";
 import ChooseInterests from "../pages/choose-interests";
+import Tribos from "../pages/tribos";
 
 const Router = () => {
   return (
@@ -26,6 +27,10 @@ const Router = () => {
         </Route>
         <Route path="/escolha-seus-interesses">
           <ChooseInterests />
+        </Route>
+
+        <Route path="/tribos">
+          <Tribos />
         </Route>
 
         <Route path="/">
