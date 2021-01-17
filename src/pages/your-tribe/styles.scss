@@ -1,0 +1,61 @@
+.your-tribe {
+  .your-tribe__content-top {
+    margin-top: 29px;
+
+    .title {
+      font-weight: normal;
+    }
+  }
+
+  .your-tribe__content-people {
+    margin-top: 30px;
+
+    h2 {
+      color: #3f414e;
+      font-size: 18px;
+    }
+
+    .image-wrapper {
+      border-radius: 10px;
+      margin-top: 13px;
+      overflow: hidden;
+
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+
+    .name {
+      color: #3f414e;
+      font-size: 18px;
+      line-height: 18px;
+      margin-top: 11px;
+    }
+
+    .age {
+      color: #a1a4b2;
+      font-size: 11px;
+      line-height: 11px;
+      font-weight: 600;
+    }
+
+    .students {
+      margin-top: 39px;
+
+      .students-list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .card {
+          width: 162px;
+        }
+      }
+    }
+  }
+
+  .button {
+    margin-top: 56px;
+  }
+}

@@ -8,7 +8,8 @@ import Onboarding03 from "./../pages/onboarding03";
 import Signup from "./../pages/signup";
 import ChooseInterests from "../pages/choose-interests";
 import TellYourHistory from "../pages/tell-your-history";
-import Tribos from "../pages/tribos";
+import Tribes from "../pages/tribes";
+import YourTribe from "../pages/your-tribe";
 
 const Router = () => {
   return (
@@ -33,7 +34,10 @@ const Router = () => {
           <TellYourHistory />
         </Route>
         <Route path="/tribos">
-          <Tribos />
+          <Tribes />
+        </Route>
+        <Route path="/sua-tribo">
+          <YourTribe />
         </Route>
 
         <Route path="/">
