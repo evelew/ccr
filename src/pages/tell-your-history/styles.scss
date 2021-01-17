@@ -1,0 +1,26 @@
+.your-history {
+  .your-history__content-top {
+    margin-top: 29px;
+  }
+
+  .your-history__options {
+    list-style: none;
+    margin-top: 35px;
+
+    li {
+      background: rgba(245, 195, 113, 0.2);
+      border-radius: 4px;
+      color: #3f414e;
+      font-size: 16px;
+      padding: 20px 15px;
+
+      &:not(:first-of-type) {
+        margin-top: 10px;
+      }
+    }
+  }
+
+  .button {
+    margin-top: 26px;
+  }
+}

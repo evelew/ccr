@@ -76,3 +76,21 @@ input {
   padding: 15px;
   width: 100%;
 }
+
+.title {
+  color: #3f414e;
+  font-size: 28px;
+  line-height: 38px;
+
+  strong {
+    display: block;
+    font-size: 28px;
+  }
+}
+
+.subtitle {
+  color: #a1a4b2;
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 11px;
+}
