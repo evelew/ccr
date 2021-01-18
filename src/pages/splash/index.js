@@ -9,7 +9,7 @@ const OnboardingSplash = () => {
   useEffect(() => {
     setTimeout(() => {
       history.push("/onboarding-01");
-    }, 1000);
+    }, 1500);
   }, [history]);
 
   return (
