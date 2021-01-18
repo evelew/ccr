@@ -43,7 +43,7 @@ const TellYourHistory = () => {
 
   return (
     <section className="your-history">
-      <Header />
+      <Header link="/escolha-seus-interesses" />
 
       <div className="your-history__content">
         <div className="container">

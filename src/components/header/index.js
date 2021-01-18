@@ -1,9 +1,11 @@
+import { Link } from "react-router-dom";
+
 import { ReactComponent as ArrowBack } from "./../../assets/icons/arrow.svg";
 import { ReactComponent as Tribo } from "./../../assets/icons/tribo.svg";
 
 import "./styles.scss";
 
-const Header = ({ withMenu }) => {
+const Header = ({ withMenu, link }) => {
   return (
     <header className="header">
       <div className="container">
@@ -24,7 +26,9 @@ const Header = ({ withMenu }) => {
               />
             </svg>
           ) : (
-            <ArrowBack />
+            <Link to={link}>
+              <ArrowBack />
+            </Link>
           )}
         </button>
 

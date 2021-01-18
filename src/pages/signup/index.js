@@ -21,7 +21,7 @@ const SignUp = () => {
 
   return (
     <section className="signup">
-      <Header />
+      <Header link="/onboarding-03" />
 
       <div className="signup__content">
         <div className="container">

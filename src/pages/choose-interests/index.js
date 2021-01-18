@@ -76,7 +76,7 @@ const ChooseInterests = () => {
 
   return (
     <section className="choose-interests">
-      <Header />
+      <Header link="/cadastrar" />
 
       <div className="choose-interests__content">
         <div className="container">

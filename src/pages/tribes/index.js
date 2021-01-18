@@ -13,7 +13,7 @@ const Tribos = () => {
 
   return (
     <section className="tribos">
-      <Header />
+      <Header link="/conte-sua-historia" />
 
       <div className="tribos__content">
         <div className="container">

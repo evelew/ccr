@@ -14,7 +14,7 @@ const YourTribe = () => {
 
   return (
     <section className="your-tribe">
-      <Header />
+      <Header link="/tribos" />
 
       <div className="your-tribe__content">
         <div className="container">
